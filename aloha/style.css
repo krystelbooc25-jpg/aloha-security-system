@@ -1,0 +1,41 @@
+:root {
+    --primary: #002b5c;
+    --accent: #D2042D;
+    --bg: #f0f4f8;
+    --text: #333;
+}
+
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: var(--text); }
+
+/* Login Page - Split Panel */
+.login-container { display: flex; height: 100vh; width: 100vw; }
+.branding-panel { flex: 1; background: var(--primary); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px; }
+.form-panel { flex: 1; background: white; display: flex; justify-content: center; align-items: center; padding: 40px; }
+.login-box { width: 100%; max-width: 400px; }
+.input-group { margin-bottom: 20px; position: relative; }
+.input-group i { position: absolute; left: 15px; top: 18px; color: #999; }
+.input-group input { width: 100%; padding: 15px 15px 15px 45px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+
+/* Dashboard UI */
+header { background: var(--primary); color: white; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid var(--accent); }
+.container { padding: 30px 50px; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 30px; }
+.stat-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; border-bottom: 4px solid var(--primary); }
+.stat-card h3 { margin: 0; font-size: 14px; color: #666; }
+.stat-card p { margin: 10px 0 0; font-size: 28px; font-weight: bold; color: var(--primary); }
+
+/* Tables & Badges */
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+th { background: #f8f9fa; padding: 15px; text-align: left; }
+td { padding: 15px; border-top: 1px solid #eee; }
+.badge { padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+.badge-pending { background: #fff3e0; color: #ef6c00; }
+.badge-accepted { background: #e8f5e9; color: #2e7d32; }
+
+/* Buttons */
+.btn { padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold; border: none; cursor: pointer; }
+.btn-primary { background: var(--primary); color: white; }
+.btn-accent { background: var(--accent); color: white; }
+
+/* Hero Section */
+.hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Resources/1.jpg') center/cover; padding: 100px 20px; color: white; text-align: center; }
